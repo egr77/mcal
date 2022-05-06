@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+![gobino](https://user-images.githubusercontent.com/105033962/167066943-26d6232c-c573-4dbf-9b97-1f9574652013.png) 
+# GOBINO CRYPTO - NFT 민팅 캘린더
 
-You can use the [editor on GitHub](https://github.com/egr77/mintcal/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%2314539a&ctz=Asia%2FSeoul&showCalendars=1&showTz=1&showPrint=0&showNav=1&showTitle=0&showTabs=0&showDate=1&src=dDVnMTJpM2twcDkzcmZtNzlqZDY0Z29qMmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#### 고비노 크립토 커뮤니티
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/egr77/mintcal/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- GOBNO CRYPTO Discord - https://discord.gg/ph8yzeKXvS
+- GOBNO CRYPTO 오픈 카카오톡 - https://open.kakao.com/o/gv85RFEd
+- GOBNO CRYPTO **NFT** 오픈 카카오톡 - https://open.kakao.com/o/gJt5H43d
+- GOBNO CRYPTO Telegram - https://t.me/ohmfork/
