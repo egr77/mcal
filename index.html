@@ -32,9 +32,16 @@
 	<!-- favicon 설정 종료 -->
 
     <style type="text/css">
-		
-		* { font-size: 12px; }
-		#frame { zoom: 1; -moz-transform: scale(1); -moz-transform-origin: 0 0; }
+
+		#frame {
+		-ms-zoom: 1;
+		-moz-transform: scale(1);
+		-moz-transform-origin: 0px 0;
+		-o-transform: scale(1);
+		-o-transform-origin: 0 0;
+		-webkit-transform: scale(1);
+		-webkit-transform-origin: 0 0; 
+		}
 			
 		body {
 			margin: 0;
@@ -44,8 +51,7 @@
 		}
 
 		@media screen and (max-width: 768px) and (orientation: portrait) {
-		/* 모바일 세로, 화면 높이의 80% (80vh)를 강제 지정 */
-			* { font-size: 14px; }
+		/* 모바일 세로, 폰트 크기를 1.5배로 줌 */
 			div{background-color: #AED5FA;}
 		
 			.iframContainer {
@@ -53,7 +59,7 @@
 				padding-bottom: 150%;
 				width: 100%;
 				height: 0;
-				margin: 0 auto;    
+				margin: 0 auto; 
 			}
 
 			#frame {
@@ -78,7 +84,6 @@
 
 		@media screen and (max-width: 1024px) and (orientation: landscape) {
 		/* 모바일 가로, 타블렛 가로 */
-			* { font-size: 16px; }
 			div{background-color: #DCFAAE;}
 
 			.iframContainer {
@@ -101,7 +106,6 @@
 
 		@media screen and (min-width: 1025px) {
 			/* 데스크탑 */
-			* { font-size: 12px; }
 			div{background-color: #FCCE98;}
 			
 			.iframContainer {
@@ -139,7 +143,7 @@
 
 		/* % 대신 뷰포트로 이미지 크기 강제로 전체 화면 폭에 맞게 지정 */
 		.header {
-			width: 100vw;
+			width: 100%;
 			height: auto !important;
 			background: #092E5E;	
 		}
@@ -179,7 +183,9 @@
 	</div>
 	<div>
 		<div class="iframContainer">
-		<iframe id="frame" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FSeoul&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&src=dDVnMTJpM2twcDkzcmZtNzlqZDY0Z29qMmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+			<p align="center">
+			<iframe id="frame" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FSeoul&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&src=dDVnMTJpM2twcDkzcmZtNzlqZDY0Z29qMmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+			</p>
 		</div>
 	</div>
 	<div>
