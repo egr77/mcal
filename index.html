@@ -8,9 +8,30 @@
 <html>
 <head>
 	<meta charset="UTF-8" /> 
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>GOBINO Crypto - NFT Minting Calendar</title>
-	<style type="text/css">
+	<META name="viewport" content="width=device-width, initial-scale=1">
+	<title>GOBINO Crypto - NFT Minting Calendar</title>
+
+	<!-- favicon 설정 시작 -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+	<link rel="manifest" href="/icons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">	
+	<!-- favicon 설정 종료 -->
+
+    <style type="text/css">
 		
 		* { font-size: 12px; }
 		
@@ -25,14 +46,6 @@
 		/* 모바일 세로, 화면 높이의 80% (80vh)를 강제 지정 */
 			* { font-size: 14px; }
 			div{background-color: #AED5FA;}
-		
-			.iframContainer {
-				position: relative;
-				padding-bottom: 150%;
-				width: 100%;
-				height: 0;
-				margin: 0 auto; 
-		  }
 
 			.social {
 				width: 60px;
@@ -49,14 +62,6 @@
 			* { font-size: 16px; }
 			div{background-color: #DCFAAE;}
 
-			.iframContainer {
-				position: relative;
-				padding-bottom: 56.25%;
-				max-width: 1080px;
-				height: 0;
-				margin: 0 auto;    
-			}
-
 			.social {
 				width: 72px;
 				height: 72px;
@@ -72,14 +77,6 @@
 			* { font-size: 12px; }
 			div{background-color: #FCCE98;}
 			
-			.iframContainer {
-				position: relative;
-				padding-bottom: 56.25%;
-				max-width: 1080px;
-				height: 0;
-				margin: 0 auto;
-			}
-
 			.social {
 				width: 76px;
 				height: 76px;
@@ -107,7 +104,7 @@
 
 		/* % 대신 뷰포트로 이미지 크기 강제로 전체 화면 폭에 맞게 지정 */
 		.header {
-			width: 100%;
+			width: 100vw;
 			height: auto !important;
 			background: #092E5E;	
 		}
@@ -121,6 +118,14 @@
 			margin-bottom: 2px;
 		}
 
+		.iframContainer {
+			position: relative;
+			padding-bottom: 80%;
+			width: 100%;
+			height: 0;
+			margin: 0 auto;    
+		}
+
 		.iframContainer iframe {
 			position: absolute;
 			top: 0;
@@ -130,6 +135,24 @@
 		}
 
 	</style>
+
+	<script type="text/javascript">
+		function resize_frame(id) {
+			var frm = document.getElementById("contentFrame");
+			function resize() {
+				frm.style.height = "auto"; // set default height for Opera
+				contentHeight = frm.contentWindow.document.documentElement.scrollHeight;
+				frm.style.height = contentHeight + 0 + "px"; // 23px for IE7
+			}
+			if (frm.addEventListener) {
+				frm.addEventListener('load', resize, false);
+			} else {
+				frm.attachEvent('onload', resize);
+			}
+		}
+		resize_frame('contentFrame');
+	</script>
+
 	
 	<script type="text/javascript">
 		document.oncontextmenu = function(){return false;}
@@ -147,7 +170,7 @@
 	</div>
 	<div>
 		<div class="iframContainer">
-		<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FSeoul&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&src=dDVnMTJpM2twcDkzcmZtNzlqZDY0Z29qMmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+			<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FSeoul&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&src=dDVnMTJpM2twcDkzcmZtNzlqZDY0Z29qMmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no" name="iframe" id="contentFrame"></iframe>
 		</div>
 	</div>
 	<div>
