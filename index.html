@@ -28,7 +28,6 @@
 				padding-bottom: 150%;
 				max-width: 100%;
 				height: 0;
-				overflow: hidden;
 				margin: 0 auto; 
 		  }
 
@@ -37,6 +36,8 @@
 				height: 60px;
 				margin-top: 2px;
 				margin-bottom: 2px;
+				margin-left: 2px;
+				margin-right: 2px;
 			}
 		}
 
@@ -50,7 +51,6 @@
 				padding-bottom: 56.25%;
 				max-width: 800px;
 				height: 0;
-				overflow: hidden;
 				margin: 0 auto;    
 			}
 
@@ -59,6 +59,8 @@
 				height: 72px;
 				margin-top: 2px;
 				margin-bottom: 2px;
+				margin-left: 2px;
+				margin-right: 2px;
 			}
 		}
 
@@ -72,7 +74,6 @@
 				padding-bottom: 56.25%;
 				max-width: 800px;
 				height: 0;
-				overflow: hidden;
 				margin: 0 auto;
 			}
 
@@ -81,6 +82,8 @@
 				height: 76px;
 				margin-top: 2px;
 				margin-bottom: 2px;
+				margin-left: 2px;
+				margin-right: 2px;
 			}
 		}
 
@@ -95,6 +98,8 @@
 			font-size: 1em; 
 			color: #800000; 
 			font-family: arial;
+			margin-top: 4px;
+			margin-bottom: 4px;
 		}
 
 		/* % 대신 뷰포트로 이미지 크기 강제로 전체 화면 폭에 맞게 지정 */
@@ -131,20 +136,23 @@
 <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydown="return false">
 
 <div class="wrapper" align="center">
-	<div>
-		<span class="header"><img src="images/header.png"/></span>
+	<div class="header">
+		<img src="images/header.png"/>
 	</div>
-	<div>
-		<br>
-		<span class="caution">민팅 일정은 예고없이 변경될 수 있습니다. 반드시 공식 프로젝트 사이트를 통해 교차검증 하시기 바랍니다.</span>
-		<br>
+	<div class="caution">
+		민팅 일정은 예고없이 변경될 수 있습니다. 반드시 공식 프로젝트 사이트를 통해 교차검증 하시기 바랍니다.
 	</div>
 	<div class="iframContainer">
 		<iframe id="calendar" name="calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FSeoul&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&src=dDVnMTJpM2twcDkzcmZtNzlqZDY0Z29qMmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 	</div>
 	<div>
+		<p align="center">
 		<br>
-    <a href="https://discord.com/invite/ph8yzeKXvS" alt="고비노 크립토 디스코드"><span class="social"><img src="images/discord.png"/></span></a> &nbsp; &nbsp; &nbsp; <a href="https://open.kakao.com/o/gv85RFEd" alt="고비노 크립토 오픈톡"><span class="social"><img src="images/kakaotalk.png"/></span></a> &nbsp; &nbsp; &nbsp; <a href="https://t.me/ohmfork/" alt="고비노 크립토 텔레그램"><span class="social"><img src="images/telegram.png"/></span></a>
+			<span class="social"><a href="https://discord.com/invite/ph8yzeKXvS" alt="고비노 크립토 디스코드"><img src="images/discord.png"/></a></span>
+			<span class="social"><a href="https://open.kakao.com/o/gv85RFEd" alt="고비노 크립토 오픈톡"><img src="images/kakaotalk.png"/></a></span>
+			<span class="social"><a href="https://t.me/ohmfork/" alt="고비노 크립토 텔레그램"><img src="images/telegram.png"/></a></span> 
+		<br>
+		</p>
 	</div>      
 	<div>
 		<span class="copyright">&copy; Copyright 2022, GOBINO Crypto all rights reserved</span>
