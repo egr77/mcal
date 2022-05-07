@@ -11,6 +11,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>GOBINO Crypto - NFT Minting Calendar</title>
 	<style type="text/css">
+		
+		* { font-size: 12px; }
+		
 		body {
 			margin: 0;
 			padding: 0;
@@ -20,13 +23,13 @@
 
 		@media screen and (max-width: 768px) and (orientation: portrait) {
 		/* 모바일 세로, 화면 높이의 80% (80vh)를 강제 지정 */
-		
+			* { font-size: 14px; }
 			div{background-color: #AED5FA;}
 		
 			.iframContainer {
 				position: relative;
 				padding-bottom: 150%;
-				max-width: 100%;
+				width: 100%;
 				height: 0;
 				margin: 0 auto; 
 		  }
@@ -34,22 +37,22 @@
 			.social {
 				width: 60px;
 				height: 60px;
-				margin-top: 2px;
-				margin-bottom: 2px;
-				margin-left: 2px;
-				margin-right: 2px;
+				margin-top: 6px;
+				margin-bottom: 6px;
+				margin-left: 6px;
+				margin-right: 6px;
 			}
 		}
 
 		@media screen and (max-width: 1024px) and (orientation: landscape) {
 		/* 모바일 가로, 타블렛 가로 */
-
+			* { font-size: 16px; }
 			div{background-color: #DCFAAE;}
 
 			.iframContainer {
 				position: relative;
 				padding-bottom: 56.25%;
-				max-width: 800px;
+				max-width: 1080px;
 				height: 0;
 				margin: 0 auto;    
 			}
@@ -57,22 +60,22 @@
 			.social {
 				width: 72px;
 				height: 72px;
-				margin-top: 2px;
-				margin-bottom: 2px;
-				margin-left: 2px;
-				margin-right: 2px;
+				margin-top: 6px;
+				margin-bottom: 6px;
+				margin-left: 6px;
+				margin-right: 6px;
 			}
 		}
 
 		@media screen and (min-width: 1025px) {
-
-			div{background-color: #FCCE98;}
-
 			/* 데스크탑 */
+			* { font-size: 12px; }
+			div{background-color: #FCCE98;}
+			
 			.iframContainer {
 				position: relative;
 				padding-bottom: 56.25%;
-				max-width: 800px;
+				max-width: 1080px;
 				height: 0;
 				margin: 0 auto;
 			}
@@ -80,10 +83,10 @@
 			.social {
 				width: 76px;
 				height: 76px;
-				margin-top: 2px;
-				margin-bottom: 2px;
-				margin-left: 2px;
-				margin-right: 2px;
+				margin-top: 6px;
+				margin-bottom: 6px;
+				margin-left: 6px;
+				margin-right: 6px;
 			}
 		}
 
@@ -98,8 +101,8 @@
 			font-size: 1em; 
 			color: #800000; 
 			font-family: arial;
-			margin-top: 4px;
-			margin-bottom: 4px;
+			margin-top: 6px;
+			margin-bottom: 6px;
 		}
 
 		/* % 대신 뷰포트로 이미지 크기 강제로 전체 화면 폭에 맞게 지정 */
@@ -139,19 +142,19 @@
 	<div class="header">
 		<img src="images/header.png"/>
 	</div>
-	<div class="caution">
-		민팅 일정은 예고없이 변경될 수 있습니다. 반드시 공식 프로젝트 사이트를 통해 교차검증 하시기 바랍니다.
+	<div>
+		<span class="caution">민팅 일정은 예고없이 변경될 수 있습니다. 반드시 공식 프로젝트 사이트를 통해 교차검증 하시기 바랍니다.</span>
 	</div>
-	<div class="iframContainer">
-		<iframe id="calendar" name="calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FSeoul&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&src=dDVnMTJpM2twcDkzcmZtNzlqZDY0Z29qMmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+	<div>
+		<div class="iframContainer">
+		<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FSeoul&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&src=dDVnMTJpM2twcDkzcmZtNzlqZDY0Z29qMmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+		</div>
 	</div>
 	<div>
 		<p align="center">
-		<br>
 			<span class="social"><a href="https://discord.com/invite/ph8yzeKXvS" alt="고비노 크립토 디스코드"><img src="images/discord.png"/></a></span>
 			<span class="social"><a href="https://open.kakao.com/o/gv85RFEd" alt="고비노 크립토 오픈톡"><img src="images/kakaotalk.png"/></a></span>
 			<span class="social"><a href="https://t.me/ohmfork/" alt="고비노 크립토 텔레그램"><img src="images/telegram.png"/></a></span> 
-		<br>
 		</p>
 	</div>      
 	<div>
