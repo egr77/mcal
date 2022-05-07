@@ -3,28 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <title>GOBINO Crypto - NFT Minting Calendar</title>
+	<style>
+		div{
+			width: 100%;
+			height: 100%;
+		}
+
+		@media screen and (max-width:1799px) {
+		/* 데스크탑 */
+		
+			.header {
+				width: 1280px;
+				height: 98px;
+				float: left;
+				background: #092E5E;
+				object-fit: cover;
+			}				
+
+			.social {
+				width: 80px;
+				height: 80px;
+			}				
+
+		}
+
+		@media screen and (max-width:1199px) {
+		/* 타블렛 가로 */
+			.header {
+				width: 1024px;
+				height: 78px;
+				float: left;
+				background: #092E5E;
+				object-fit: cover;
+			}				
+
+			.social {
+				width: 72px;
+				height: 72px;
+			}			
+
+		}
+		@media screen and (max-width:899px) {
+		/* 모바일 가로, 타블렛 세로 */
+			.header {
+				width: 899px;
+				height: 68px;
+				float: left;
+				background: #092E5E;
+				object-fit: cover;
+			}				
+
+			.social {
+				width: 66px;
+				height: 66px;
+			}			
+
+		}
+
+		@media screen and (max-width:599px) {
+		/* 모바일 세로 */
+			.header {
+				width: 599px;
+				height: 45px;
+				float: left;
+				background: #092E5E;
+				object-fit: cover;
+			}				
+
+			.social {
+				width: 60px;
+				height: 60px;
+			}			
+
+		}
+
+		/* 공통 스타일 정의 */
+
+		.wrapper {
+		  display: grid;
+		  grid-auto-rows: minmax(10px, auto);
+		}
+
+		.warn {
+		  font-style: italic; 
+		  font-weight: bold; 
+		  font-size: 10pt; 
+		  line-height: 1.0em; 
+		  color: #800000; 
+		  font-family: arial;
+		}
+
+		.footer {
+		  font-style: italic; 
+		  font-size: 8pt; 
+		  line-height: 1.0em; 
+		  color: #566573; 
+		  font-family: arial;
+		}
+
+	</style>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
 <div class="wrapper">
-  <div>
-    <span class="header"><img src="images/header.png"/></span>
-  </div>
-  <div>
-    <span class="warn">민팅 일정은 예고없이 변경될 수 있습니다. 반드시 공식 프로젝트 사이트를 통해 교차검증 하시기 바랍니다.</span>
-  </div>
-  
-  <div>
-    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FSeoul&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&src=dDVnMTJpM2twcDkzcmZtNzlqZDY0Z29qMmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-  </div>
-  
-  <div>
-     <a href="https://discord.com/invite/ph8yzeKXvS" alt="고비노 크립토 디스코드"><img src="images/discord.png"></a> &nbsp; &nbsp; &nbsp; <a href="https://open.kakao.com/o/gv85RFEd" alt="고비노 크립토 오픈톡"><img src="images/kakaotalk.png"></a> &nbsp; &nbsp; &nbsp; <a href="https://t.me/ohmfork/" alt="고비노 크립토 텔레그램"><img src="images/telegram.png"></a>
-  </div>      
-  <div>
-    <span class="footer">&copy; Copyright 2022, GOBINO Crypto all rights reserved</span>
-  </div>
+	<div>
+		<div class="header"><img src="images/header.png"/></div>
+	</div>
+	<div>
+		<span class="warn" align="center">민팅 일정은 예고없이 변경될 수 있습니다. 반드시 공식 프로젝트 사이트를 통해 교차검증 하시기 바랍니다.</span>
+	</div>
+	<div>
+		<span align="center">
+			<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FSeoul&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&src=dDVnMTJpM2twcDkzcmZtNzlqZDY0Z29qMmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+		</span>
+	</div>
+	<div>
+		<span align="center">
+			<a href="https://discord.com/invite/ph8yzeKXvS" alt="고비노 크립토 디스코드"><div class="social"><img src="images/discord.png"/></div></a> &nbsp; &nbsp; &nbsp; <a href="https://open.kakao.com/o/gv85RFEd" alt="고비노 크립토 오픈톡"><div class="social"><img src="images/kakaotalk.png"/></div></a> &nbsp; &nbsp; &nbsp; <a href="https://t.me/ohmfork/" alt="고비노 크립토 텔레그램"><div class="social"><img src="images/telegram.png"/></div></a>
+		</span>	
+	</div>      
+	<div>
+		<span class="footer" align="center">&copy; Copyright 2022, GOBINO Crypto all rights reserved</span>
+	</div>
 </div>
 
 </body>
