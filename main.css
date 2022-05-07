@@ -1,0 +1,39 @@
+.header img {
+  float: left;
+  height: 115px;
+  background: #092E5E;
+}
+
+.wrapper {
+  display: grid;
+  grid-auto-rows: minmax(10px, auto);
+  row-gap: 2px;
+}
+
+.warn {
+  font-style: italic; 
+  font-weight: bold; 
+  font-size: 10pt; 
+  line-height: 1.0em; 
+  color: #800000; 
+  font-family: arial;
+}
+
+.footer {
+  font-style: italic; 
+  font-size: 8pt; 
+  line-height: 1.0em; 
+  color: #566573; 
+  font-family: arial;
+}
+
+
+/*미디어 뭐리!!!!!!!!!!*/
+@media (max-width:600px){ /*가로 너비가 600px 이하일 때 아래 스타일 적용*/
+    #main {
+        display: block;
+    }
+    #main .sidebar {
+        min-height: 0;
+    }
+}
