@@ -14,11 +14,15 @@
 		body {
 			margin: 0;
 			padding: 0;
-			background-color: #ffffff;
+      width: 100%;
+      height: 100%;
 		}
 
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 768px) and (orientation: portrait) {
 		/* 모바일 세로, 화면 높이의 80% (80vh)를 강제 지정 */
+		
+			div{background-color: #AED5FA;}
+		
 			.iframContainer {
 				position: relative;
 				padding-bottom: 140%;
@@ -35,8 +39,11 @@
 			}
 		}
 
-		@media screen and (max-width: 1024px) {
+		@media screen and (max-width: 1024px) and (orientation: landscape) {
 		/* 모바일 가로, 타블렛 가로 */
+
+			div{background-color: #DCFAAE;}
+
 			.iframContainer {
 				position: relative;
 				padding-bottom: 50%;
@@ -54,11 +61,14 @@
 		}
 
 		@media screen and (min-width: 1025px) {
+
+			div{background-color: #FCCE98;}
+
 			/* 데스크탑 */
 			.iframContainer {
 				position: relative;
-				padding-bottom: 50%;
-				width: 800px;
+				padding-top: 50%;
+				width: 80%;
 				height: 0;
 				margin: 0 auto;
 			}
