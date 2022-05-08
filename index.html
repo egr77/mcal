@@ -5,10 +5,10 @@
 	7 May 2022
 	version 0.1
 -->
-<html>
+<html lang="ko">
 <head>
 	<meta charset="UTF-8" /> 
-	<META name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>GOBINO Crypto - NFT Minting Calendar</title>
 
 	<!-- favicon 설정 시작 -->
@@ -31,7 +31,7 @@
 	<meta name="theme-color" content="#ffffff">	
 	<!-- favicon 설정 종료 -->
 
-    <style type="text/css">
+    <style>
 			
 		body {
 			margin: 0;
@@ -41,35 +41,46 @@
 		}
 
 		@media screen and (max-width: 768px) and (orientation: portrait) {
-		/* 모바일 세로 */
-		
-			.iframContainer {
+		/* 기본값, 모바일 세로, Mobile first */		
+			.iframeContainer {
 				position: relative;
 				padding-bottom: 140%;
 				width: 100%;
 				height: 0;
-				margin: 0 auto; 
+				margin: 0 auto;
 			}
 
+			.social_medium {
+				display: block;
+			}
+			
+			.social_large {
+				display: none;
+			}
 		}
-
-		@media screen and (max-width: 1280px) {
+		
+		@media screen and (max-width: 1280px) and (orientation: landscape) {
 		/* 모바일 가로, 타블렛 가로 */
-
-			.iframContainer {
+			.iframeContainer {
 				position: relative;
 				padding-bottom: 56.25%;
-				max-width: 1080px;
+				max-width: 980px;
 				height: 0;
-				margin: 0 auto;    
+				margin: 0 auto;
 			}
 
+			.social_medium {
+				display: none;
+			}
+			
+			.social_large {
+				display: block;
+			}
 		}
 
 		@media screen and (min-width: 1289px) {
-			/* 데스크탑 */
-	
-			.iframContainer {
+			/* 데스크탑 */	
+			.iframeContainer {
 				position: relative;
 				padding-bottom: 56.25%;
 				max-width: 1080px;
@@ -77,107 +88,89 @@
 				margin: 0 auto;
 			}
 
+			.social_medium {
+				display: none;
+			}
+			
+			.social_large {
+				display: block;
+			}
 		}
 
 		/* 공통 스타일 정의 */
 		.wrapper {
 			display: grid;
-		}
-
-		/* 헤더 이미지 배경 처리 */
-		.header {
 			margin: 0 auto;
-			width: 100%;
-			background: #092E5E;
 		}
 
-		.caution {
-			font-style: italic; 
-			font-weight: bold; 
-			font-size: 1em; 
-			color: #800000; 
+		#caution {
+			font-style: italic;
+			font-weight: bold;
+			font-size: 1em;
+			color: #800000;
 			font-family: arial;
-			margin-top: 6px;
-			margin-bottom: 6px;
+			margin: 0 auto;
 		}
-
-		.copyright {
-			font-style: italic; 
-			font-size: 8pt; 
-			color: #566573; 
+		
+		.social {
+			margin-top: 4px;
+			margin-bottom: 4px;
+			margin-left: 4px;
+			margin-right: 4px;
+		}
+		
+		#copyright {
+			font-style: italic;
+			font-size: 8pt;
+			color: #566573;
 			font-family: arial;
 			margin-top: 2px;
 			margin-bottom: 2px;
+			margin: 0 auto;
 		}
 
-		.iframContainer iframe {
+		.iframeContainer iframe {
 			position: absolute;
 			top: 0;
 			left: 0;
 			width:100%;
-			height: 100%;  
+			height: 100%;
 		}
 
 	</style>
-	
-	<script type="text/javascript">
-		document.oncontextmenu = function(){return false;}
-	</script>
-	
 </head>
 
-<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydown="return false">
+<body>
 
-	<div class="wrapper" align="center">
-		<div class="header">
+	<div class="wrapper" style="border:1px solid red;">
+		<div style="border:1px solid black;">
 			<picture>
 				<source srcset="./images/header-small.png 768w" media="(max-width: 768px)">
 				<source srcset="./images/header-medium.png 1280w" media="(max-width: 1280px)">
 				<source srcset="./images/header-large.png" media="(min-width: 1281px)">
-				<img src="./images/header-large.png" alt="hearding">
+				<img src="./images/header-large.png" alt="">
 			</picture>
 		</div>
-		<div class="caution">
+		<div id="caution" style="border:1px solid blue; margin-top:8px; margin-bottom:8px; padding-left:20px; padding-right:20px;">
 			민팅 일정은 예고없이 변경될 수 있습니다. 반드시 공식 프로젝트 사이트를 통해 교차검증 하시기 바랍니다.
 		</div>
-		<div>
-			<div class="iframContainer">
-				<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FSeoul&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&src=dDVnMTJpM2twcDkzcmZtNzlqZDY0Z29qMmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+		<div style="border:1px solid green;">
+			<div class="iframeContainer" style="border:1px solid red;">
+				<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FSeoul&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&src=dDVnMTJpM2twcDkzcmZtNzlqZDY0Z29qMmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4" style="border-width:0" frameborder="0" scrolling="no"></iframe>
 			</div>
 		</div>
 		<div>
-			<p align="center">
-			<br>
-			<!-- span tag로 묶어 한줄로 표시되게 함 -->
-			<span>
-				<a href="https://discord.com/invite/ph8yzeKXvS" alt="고비노 크립토 디스코드">
-				<picture>
-					<source srcset="./images/discord-medium.png 1280w" media="(max-width: 1280px)">
-					<source srcset="./images/discord-large.png" media="(min-width: 1281px)">
-					<img src="./images/discord-large.png">
-				</picture>
-				&nbsp;
-				</a>
-				<a href="https://open.kakao.com/o/gv85RFEd" alt="고비노 크립토 오픈톡">
-				<picture>
-					<source srcset="./images/kakaotalk-medium.png 1280w" media="(max-width: 1280px)">
-					<source srcset="./images/kakaotalk-large.png" media="(min-width: 1281px)">
-					<img src="./images/kakaotalk-large.png">
-				</picture>
-				</a>
-				&nbsp;
-				<a href="https://t.me/ohmfork/" alt="고비노 크립토 텔레그램">
-				<picture>
-					<source srcset="./images/telegram-medium.png 1280w" media="(max-width: 1280px)">
-					<source srcset="./images/telegram-large.png" media="(min-width: 1281px)">
-					<img src="./images/telegram-large.png">
-				</picture>
-				</a>
-			</span>
-			<br>
-			</p>
-		</div>      
-		<div class="copyright">
+			<div style="float: left; padding-top:6px; width:40%;">
+				<article align="right"><a href="https://discord.com/invite/ph8yzeKXvS"><img class="social_medium" src="./images/discord-medium.png" alt="discord"><img class="social_large" src="./images/discord-large.png" alt="discord"></a></article>
+			</div>
+			<div style="float: left; margin: 0 auto; padding-top:6px; width:20%;">
+				<article align="center"><a href="https://open.kakao.com/o/gv85RFEd"><img class="social_medium" src="./images/kakaotalk-medium.png" alt="kakaotalk"><img class="social_large" src="./images/kakaotalk-large.png" alt="kakaotalk"></a></article>
+			</div>
+			<div style="float: left; padding-top:6px; width:40%;">
+				<article align="left"><a href="https://t.me/ohmfork/"><img class="social_medium" src="./images/telegram-medium.png" alt="telegram"><img class="social_large" src="./images/telegram-large.png" alt="telegram"></a></article>
+			</div>
+		</div>   
+		<div id="copyright" style="margin-top:8px; margin-bottom:4px;">
 			&copy; Copyright 2022, GOBINO Crypto all rights reserved
 		</div>
 	</div>
