@@ -32,16 +32,6 @@
 	<!-- favicon 설정 종료 -->
 
     <style type="text/css">
-
-		#frame {
-		-ms-zoom: 1;
-		-moz-transform: scale(1);
-		-moz-transform-origin: 0px 0;
-		-o-transform: scale(1);
-		-o-transform-origin: 0 0;
-		-webkit-transform: scale(1);
-		-webkit-transform-origin: 0 0; 
-		}
 			
 		body {
 			margin: 0;
@@ -53,23 +43,22 @@
 		@media screen and (max-width: 768px) and (orientation: portrait) {
 		/* 모바일 세로, 폰트 크기를 1.5배로 줌 */
 			div{background-color: #AED5FA;}
+
+			/* 헤더 이미지 처리 */
+			.header {
+				display: block;
+				width: 768px;
+				margin: 0 auto;
+				max-width: 100%;
+				background: #092E5E;
+			}
 		
 			.iframContainer {
 				position: relative;
 				padding-bottom: 150%;
-				width: 50%;
+				width: 100%;
 				height: 0;
 				margin: 0 auto; 
-			}
-
-			#frame {
-			-ms-zoom: 2;
-			-moz-transform: scale(2);
-			-moz-transform-origin: 0px 0;
-			-o-transform: scale(2);
-			-o-transform-origin: 0 0;
-			-webkit-transform: scale(2);
-			-webkit-transform-origin: 0 0; 
 			}
 
 			.social {
@@ -85,6 +74,15 @@
 		@media screen and (max-width: 1024px) and (orientation: landscape) {
 		/* 모바일 가로, 타블렛 가로 */
 			div{background-color: #DCFAAE;}
+
+			/* 헤더 이미지 처리 */
+			.header {
+				display: block;
+				width: 1024px;
+				margin: 0 auto;
+				max-width: 100%;
+				background: #092E5E;
+			}
 
 			.iframContainer {
 				position: relative;
@@ -107,6 +105,15 @@
 		@media screen and (min-width: 1025px) {
 			/* 데스크탑 */
 			div{background-color: #FCCE98;}
+
+			/* 헤더 이미지 처리 */
+			.header {
+				display: block;
+				width: 1024px;
+				margin: 0 auto;
+				max-width: 100%;
+				background: #092E5E;
+			}
 			
 			.iframContainer {
 				position: relative;
@@ -147,6 +154,8 @@
 			height: auto !important;
 			background: #092E5E;	
 		}
+		
+
 
 		.copyright {
 			font-style: italic; 
@@ -179,20 +188,22 @@
 		<img src="images/header.png"/>
 	</div>
 	<div>
+		<br>
 		<span class="caution">민팅 일정은 예고없이 변경될 수 있습니다. 반드시 공식 프로젝트 사이트를 통해 교차검증 하시기 바랍니다.</span>
+		<br>
 	</div>
 	<div>
 		<div class="iframContainer">
-			<p align="center">
-			<iframe id="frame" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FSeoul&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&src=dDVnMTJpM2twcDkzcmZtNzlqZDY0Z29qMmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-			</p>
+			<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FSeoul&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&src=dDVnMTJpM2twcDkzcmZtNzlqZDY0Z29qMmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%234285F4" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 		</div>
 	</div>
 	<div>
 		<p align="center">
+		<br>
 			<span class="social"><a href="https://discord.com/invite/ph8yzeKXvS" alt="고비노 크립토 디스코드"><img src="images/discord.png"/></a></span>
 			<span class="social"><a href="https://open.kakao.com/o/gv85RFEd" alt="고비노 크립토 오픈톡"><img src="images/kakaotalk.png"/></a></span>
 			<span class="social"><a href="https://t.me/ohmfork/" alt="고비노 크립토 텔레그램"><img src="images/telegram.png"/></a></span> 
+		<br>
 		</p>
 	</div>      
 	<div>
